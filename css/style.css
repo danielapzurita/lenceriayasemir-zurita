@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FDCAD9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #FBEAEF; 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.logoYasemir {
+    width: 80px;
+    background: #FBEAEF;
+    border-radius: 50px;
+    border: 2px solid #FDCAD9; 
+    margin-left: 2%;
+}
+
+h2 {
+    font-size: 30px;
+    color: #ccc;
+    padding-bottom: 1em;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    font-size: 16px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: darkred;
+}
+
+.subNav {
+    background-color: #FBEAEF;
+}
+
+.nav {
+    width: 100%;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    background-color: #FBEAEF;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: #7B0124;
+}
+
+.nav li a:hover {
+    background: #fff;
+    color: #7B0124;
+}
+
+article div a p {
+    background: #fc658f;
+    color: #7B0124;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+} 
+
+/* #centrarFoto {
+    width: 100%;
+} */ 
+
+div {
+    display: grid;
+}
+
+.inicio {
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    min-height: 40em;
+    color: aliceblue;
+    background-image: url(../media/parainicio.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.inicio .nombre {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    color: #FDCAD9;
+   
+}
+
+.foto {
+    width: auto;
+    background-color: #FBEAEF;
+    padding: 10px 30px 10px 10px;
+    display: flex;
+    text-align: center;
+}
+
+h3 {
+    color: #7B0124;
+    font-size: 1em;
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
+}
+
+textarea {
+    resize: vertical;
+    max-height:300px;
+    min-height:100px;
+}
+
+input:focus, textarea {
+    border: 1px solid #7B0124
+}
+
+label {
+    font-size: 15px;
+}
+
+section div a p {
+    background: #fc658f;
+    color: #7B0124;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+} 
+
+.centrar {
+    background-color: #fc658f;
+    text-align: center;
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+footer img {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    margin: 1px 4px 5px 4px;
+}
+
+footer p {
+    background-color: #fc658f;
+    color: darkred
+}
+
+.fotosRedes {
+    display: inline-block;
+    margin-top: 7em;
+}
+
+/* Css Sobre mi*/
+
+h1 {
+    color: #7B0124;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.foto {
+    width: 180px;
+    height: auto;
+    margin: auto;
+    display: inline-block;
+}
+
+section article p {
+    color: #7B0124;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: justify; 
+}
+
+.fotoSobreMi {
+    width: 750px;
+    height: auto;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    margin: auto;
+}
+
+/* Hasta acá Css Sobre mi*/
+
+/* Css Productos*/
+
+.productosTitulos {
+    color: #7B0124;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+.fotoProducto {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+/* Hasta acá Css Productos*/
+
+/* GRIDS */
+
+.gridMasVendidos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tituloP tituloP tituloP" "less vedetina conjuntos";
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+}
+
+.tituloVendidos {
+    width: 20em;
+    grid-area: tituloP;
+    border-radius: 20px;
+    background-color: #FBEAEF;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    color: #7B0124;
+}
+
+.less {
+    grid-area: less;
+}
+
+.vedetina {
+    grid-area: vedetina;
+}
+
+.conjuntos {
+    grid-area: conjuntos;
+}
+
+.foto {
+    width: auto;
+    background-color: #FBEAEF;
+    margin-bottom: 1em;
+    padding: 10px 30px 10px 10px;
+    text-align: center;
+}
+
+.gridPacks {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "pless pcoulotte" "pvedetina pbralette" "pbustier pconjuntos";
+    justify-content: center;
+    justify-items: stretch;
+    align-content: center;
+    column-gap: 3em;
+    row-gap: 10px;
+}
+
+.packLess{
+    grid-area: pless;
+}
+
+.packCoulotte {
+    grid-area: pcoulotte;
+}
+
+.packVedetina {
+    grid-area: pvedetina;
+}
+
+.packBralette {
+    grid-area: pbralette;
+}
+
+.packBustier {
+    grid-area: pbustier;
+}
+
+.packConjuntos {
+    grid-area: pconjuntos;
+}
+
+/* GRIDS SOBRE MI */
+
+.gridSobreMi {
+    display: grid;
+    grid-template-columns: 75%;
+    grid-template-rows: 8% auto auto auto 3%;
+    grid-template-areas: "tituloSobreMi" "primerP" "fotoSobreMi" "segundoP" "botonSuscribirme";
+    justify-content: center;
+    justify-items: stretch;
+    align-content: center;
+}
+
+.tituloSobreMi {
+    grid-area: tituloSobreMi;
+}
+.primerP{
+    grid-area: primerP;
+}
+.fotoSobreMi{
+    grid-area: fotoSobreMi;
+}
+.segundoP{
+    grid-area: segundoP;
+}
+.botonSuscribirme{
+    grid-area: botonSuscribirme;
+}
+
+/* GRIDS CONTACTO - MI CUENTA */
+
+.gridContacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "forms";
+    justify-content: center;
+    align-content: center;
+}
+
+.form {
+    grid-area: forms;
+    text-align: center;
+}
+
+/* GRIDS PRODUCTOS */
+
+.gridProductos {
+    display: grid;
+    background-color: #FDCAD9;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "tituloproductos tituloproductos" "fotop1 fotop2 " "fotop3 fotop4" "fotop5 fotop6" " fotop7 fotop8" "fotop9 fotop10" "fotop11 fotop12";
+    row-gap: 20px;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.tituloProductos {
+    grid-area: tituloproductos;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.packLess {
+    grid-area: packLess;
+}
+
+.packCoulotte {
+    grid-area: packCoulotte;
+}
+
+.packVedetina {
+    grid-area: packVedetina;
+}
+
+.packBralette {
+    grid-area: packBralette;   
+}
+
+.packBustier {
+    grid-area: packBustier;
+}
+
+.packConjuntos {
+    grid-area: packConjuntos;    
+}
+
+.packLess, 
+.packCoulotte,
+.packVedetina,
+.packBralette,
+.packBustier,
+.packConjuntos {
+    width: 200px;  
+}
+
+.fotop1 {
+    grid-area: fotop1;
+}
+
+.fotop2 {
+    grid-area: fotop2;
+}
+
+.fotop3 {
+    grid-area: fotop3;
+}
+
+.fotop4 {
+    grid-area: fotop4;
+}
+
+.fotop5 {
+    grid-area: fotop5;
+}
+
+.fotop6 {
+    grid-area: fotop6;
+}
+
+.fotop7 {
+    grid-area: fotop7;
+}
+
+.fotop8 {
+    grid-area: fotop8;
+}
+
+.fotop9 {
+    grid-area: fotop9;
+}
+
+.fotop10 {
+    grid-area: fotop10;
+}
+
+.fotop11 {
+    grid-area: fotop11;
+}
+
+.fotop12 {
+    grid-area: fotop12;
+}
+
+/* MEDIA QUERIS */
+
+@media screen and (min-width: 320px) {
+    
+    .gridMasVendidos,
+    .gridPacks,
+    .gridSobreMi,
+    .gridProductos,
+    .gridContacto {
+        display: grid;
+    }
+
+    /* MEDIA QUERIS INDEX */
+
+    .gridMasVendidos {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "tituloP" "less";
+        justify-content: space-evenly;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .gridPacks {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "pless" "pvedetina" "pbustier";
+        justify-content: center;
+        justify-items: stretch;
+        align-content: center;
+        column-gap: 3em;
+        row-gap: 10px;
+    }
+
+    .logoYasemir {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .fotoInicio {
+        display: none;
+    }
+    
+    /* MEDIA QUERIS SOBRE MI */
+
+    .gridSobreMi {
+        grid-template-columns: 75%;
+        grid-template-rows: 8% auto auto auto 3%;
+        grid-template-areas: "tituloSobreMi" "primerP" "fotoSobreMi" "segundoP" "botonSuscribirme";
+        justify-content: center;
+        justify-items: stretch;
+        align-content: center;
+    }
+
+    .fotoSobreMi {
+        width: 180px;
+    }
+
+    /* MEDIA QUERIS PRODUCTOS */
+
+    .gridProductos {
+        background-color: #FDCAD9;
+        grid-template-columns: auto ;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "tituloproductos " "fotop1" "fotop3" "fotop5" " fotop7" "fotop9" "fotop11";
+        row-gap: 20px;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .sacarBoton {
+        display: none;
+    }
+
+    .fotoProducto {
+        margin: 0px;
+    }
+
+   /* MEDIA QUERIS CONTACTO - MI CUENTA */
+
+   .gridContacto {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "forms";
+        justify-content: center;
+        align-content: center;
+    }
+
+    footer img {
+        margin: 1px 1px 1px 1px;
+    }
+
+    textarea {
+        resize: vertical;
+        width: auto;
+        height: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    .gridMasVendidos,
+    .gridPacks,
+    .gridSobreMi,
+    .gridProductos,
+    .gridContacto {
+        display: grid;
+    }
+    /* MEDIA QUERIS INDEX */
+
+    .gridMasVendidos {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "tituloP tituloP tituloP" "less vedetina conjuntos";
+        justify-content: space-evenly;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .gridPacks {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "pless pcoulotte" "pvedetina pbralette" "pbustier pconjuntos";
+        justify-content: center;
+        justify-items: stretch;
+        align-content: center;
+        column-gap: 3em;
+        row-gap: 10px;
+    }
+    
+     /* MEDIA QUERIS SOBRE MI */
+
+     .gridSobreMi {
+        grid-template-columns: 75%;
+        grid-template-rows: 8% auto auto auto 3%;
+        grid-template-areas: "tituloSobreMi" "primerP" "fotoSobreMi" "segundoP" "botonSuscribirme";
+        justify-content: center;
+        justify-items: stretch;
+        align-content: center;
+    }
+
+    .fotoSobreMi {
+        width: 750px;
+        height: auto;
+        margin: auto;
+        display: block;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* MEDIA QUERIS PRODUCTOS */
+
+    .gridProductos {
+        background-color: #FDCAD9;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-areas: "tituloproductos tituloproductos" "fotop1 fotop2 " "fotop3 fotop4" "fotop5 fotop6" " fotop7 fotop8" "fotop9 fotop10" "fotop11 fotop12";
+        row-gap: 20px;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .fotoInicio {
+        display: block;
+    }
+
+    /* MEDIA QUERIS CONTACTO - MI CUENTA*/
+
+    .gridContacto {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "forms";
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .form {
+        grid-area: forms;
+        text-align: center;
+    }
+}
