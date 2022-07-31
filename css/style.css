@@ -19,6 +19,10 @@ header {
     padding-bottom: 1em;
 }
 
+#gradiente {
+    background: linear-gradient(to left, #e46a8e, #FBEAEF);
+}
+
 .logoYasemir {
     width: 80px;
     background: #FBEAEF;
