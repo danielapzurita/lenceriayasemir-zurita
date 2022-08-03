@@ -115,10 +115,6 @@ article div a p {
     padding: 5px;
 } 
 
-/* #centrarFoto {
-    width: 100%;
-} */ 
-
 div {
     display: grid;
 }
@@ -378,22 +374,6 @@ input {
 }
 .botonSuscribirme{
     grid-area: botonSuscribirme;
-}
-
-/* GRIDS CONTACTO - MI CUENTA */
-
-.gridContacto {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas: "forms";
-    justify-content: center;
-    align-content: center;
-}
-
-.form {
-    grid-area: forms;
-    text-align: center;
 }
 
 /* GRIDS PRODUCTOS */
