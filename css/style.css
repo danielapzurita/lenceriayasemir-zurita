@@ -115,6 +115,16 @@ article div a p {
     padding: 5px;
 } 
 
+.d-flex button {
+    border: 1px solid #7B0124;
+    color: black;
+}
+
+.d-flex button:hover {
+    background-color: #FDCAD9;
+    border: #FDCAD9;
+    color: black;
+}
 div {
     display: grid;
 }
@@ -254,21 +264,38 @@ input {
 
 /* Css Productos*/
 
-.productosTitulos {
+.card-body a {
+    background-color: #7B0124;
+    border: 1px solid #FDCAD9;
+    margin: auto;
+}
+
+.card-body a:hover {
+    background-color: #e46a8e;
     color: #7B0124;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 10px;
+    border: 1px solid #7B0124;
 }
 
-.fotoProducto {
-    display: flex;
-    flex-direction: column;
-    width: 150px;
-    height: auto;
-    flex-wrap: wrap;
+.card-body h5 {
+    text-align: center;
 }
-
 /* Hasta acá Css Productos*/
+
+/* Css de contacto */
+
+.col-1 button {
+    background-color: #7B0124;
+    color: #FBEAEF;
+    border: 1px solid #FDCAD9;
+}
+
+.col-1 button:hover {
+    background-color: #e46a8e;
+    color: #7B0124;
+    border: 1px solid #7B0124;
+}
+
+/* Hasta acá Css de contacto*/
 
 /* GRIDS */
 
@@ -376,109 +403,6 @@ input {
     grid-area: botonSuscribirme;
 }
 
-/* GRIDS PRODUCTOS */
-
-.gridProductos {
-    display: grid;
-    background-color: #FDCAD9;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    grid-template-areas: "tituloproductos tituloproductos" "fotop1 fotop2 " "fotop3 fotop4" "fotop5 fotop6" " fotop7 fotop8" "fotop9 fotop10" "fotop11 fotop12";
-    row-gap: 20px;
-    justify-content: space-evenly;
-    justify-items: center;
-    text-align: center;
-    align-content: center;
-}
-
-.tituloProductos {
-    grid-area: tituloproductos;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.packLess {
-    grid-area: packLess;
-}
-
-.packCoulotte {
-    grid-area: packCoulotte;
-}
-
-.packVedetina {
-    grid-area: packVedetina;
-}
-
-.packBralette {
-    grid-area: packBralette;   
-}
-
-.packBustier {
-    grid-area: packBustier;
-}
-
-.packConjuntos {
-    grid-area: packConjuntos;    
-}
-
-.packLess, 
-.packCoulotte,
-.packVedetina,
-.packBralette,
-.packBustier,
-.packConjuntos {
-    width: 200px;  
-}
-
-.fotop1 {
-    grid-area: fotop1;
-}
-
-.fotop2 {
-    grid-area: fotop2;
-}
-
-.fotop3 {
-    grid-area: fotop3;
-}
-
-.fotop4 {
-    grid-area: fotop4;
-}
-
-.fotop5 {
-    grid-area: fotop5;
-}
-
-.fotop6 {
-    grid-area: fotop6;
-}
-
-.fotop7 {
-    grid-area: fotop7;
-}
-
-.fotop8 {
-    grid-area: fotop8;
-}
-
-.fotop9 {
-    grid-area: fotop9;
-}
-
-.fotop10 {
-    grid-area: fotop10;
-}
-
-.fotop11 {
-    grid-area: fotop11;
-}
-
-.fotop12 {
-    grid-area: fotop12;
-}
-
 /* MEDIA QUERIS */
 
 @media screen and (min-width: 320px) {
@@ -532,26 +456,6 @@ input {
 
     .fotoSobreMi {
         width: 180px;
-    }
-
-    /* MEDIA QUERIS PRODUCTOS */
-
-    .gridProductos {
-        background-color: #FDCAD9;
-        grid-template-columns: auto ;
-        grid-template-rows: auto auto auto auto auto auto auto;
-        grid-template-areas: "tituloproductos " "fotop1" "fotop3" "fotop5" " fotop7" "fotop9" "fotop11";
-        row-gap: 20px;
-        justify-content: space-evenly;
-        text-align: center;
-    }
-
-    .sacarBoton {
-        display: none;
-    }
-
-    .fotoProducto {
-        margin: 0px;
     }
 
    /* MEDIA QUERIS CONTACTO - MI CUENTA */
@@ -629,16 +533,6 @@ input {
     }
 
     /* MEDIA QUERIS PRODUCTOS */
-
-    .gridProductos {
-        background-color: #FDCAD9;
-        grid-template-columns: auto auto ;
-        grid-template-rows: auto auto auto auto auto auto auto;
-        grid-template-areas: "tituloproductos tituloproductos" "fotop1 fotop2 " "fotop3 fotop4" "fotop5 fotop6" " fotop7 fotop8" "fotop9 fotop10" "fotop11 fotop12";
-        row-gap: 20px;
-        justify-content: space-evenly;
-        text-align: center;
-    }
 
     nav {
         display: block;
