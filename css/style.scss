@@ -265,7 +265,7 @@ section article p {
     color:$colorPrincipal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    text-align: justify; 
+    text-align: center; 
 }
 
 .fotoSobreMi {
@@ -285,6 +285,18 @@ input {
 /* Hasta acá Css Sobre mi*/
 
 /* Css Productos*/
+
+.row {
+    margin-bottom: 1em;
+}
+
+.card {
+    background-color: #f8d2e2;
+    border: 2px solid $colorPrincipal;
+    img {
+        padding: 5em;
+    }
+}
 
 .card-body {
     
