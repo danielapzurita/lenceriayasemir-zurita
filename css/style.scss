@@ -1,11 +1,29 @@
+$colorPrincipal: #7B0124;
+$colorSecundario: #FDCAD9;
+
+@mixin letra {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* MAPA */
+
+$mapabotones: (
+    fondo: #fc658f,
+    color: $colorPrincipal,
+    decoracion: none,
+    texto: center,
+    tipo: inline-block,
+    margin1: 10px,
+    margin2: 5px,
+    margin3: 10px,
+    margin4: 10px,
+    padding: 5px,
+);
+
 * {
     margin: 0;
     padding: 0;
 }
-
-$colorPrincipal: #7B0124;
-$colorSecundario: #FDCAD9;
-
 
 body {
     background-color: $colorSecundario;
@@ -35,7 +53,6 @@ h2 {
 p {
     font-size: 20px;
 }
-
 
 li {
     display: inline-block;
@@ -80,7 +97,6 @@ ul {
         color: $colorPrincipal;
     }
 }
-
 
 ul li:hover ul {
     display: block;
@@ -180,26 +196,34 @@ label {
 }
 
 section div a p {
-    background: #fc658f;
-    color:$colorPrincipal;
-    text-decoration: none;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding: 5px;
+
+    @include letra;
+
+    /* MAP-GET*/
+
+    background: map-get($mapabotones, fondo);
+    color: map-get($mapabotones, color);
+    text-decoration: map-get($mapabotones, decoracion);
+    text-align: map-get($mapabotones, texto);
+    display: map-get($mapabotones, tipo);
+    margin-top: map-get($mapabotones, margin1);
+    margin-left: map-get($mapabotones, margin2);
+    margin-bottom: map-get($mapabotones, margin3);
+    margin-right: map-get($mapabotones, margin4);
+    padding: map-get($mapabotones, padding);
 } 
 
 .centrar {
+    @include letra;
     background-color: #fc658f;
     text-align: center;
+    color: $colorPrincipal;
+    padding: 5px 5px 5px 5px;
 }
 
 footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    @include letra;
     text-align: center;
 
     img {
@@ -279,6 +303,11 @@ input {
     }
 }
 
+section article a {
+    text-decoration: none;
+    margin: auto;
+    padding: 2px 2px 2px 2px;
+}
 
 /* Hasta acá Css Productos*/
 
@@ -297,6 +326,9 @@ input {
     }
 }
 
+.btn btn-primary {
+    @extend .centrar;
+}
 
 /* Hasta acá Css de contacto*/
 
@@ -403,10 +435,11 @@ input {
     grid-area: segundoP;
 }
 .botonSuscribirme{
+    @extend .centrar;
     grid-area: botonSuscribirme;
 }
 
-/* MEDIA QUERIS */
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 320px) {
     
@@ -418,7 +451,7 @@ input {
         display: grid;
     }
 
-    /* MEDIA QUERIS INDEX */
+    /* MEDIA QUERIES INDEX */
 
     .gridMasVendidos {
         grid-template-columns: auto;
@@ -446,7 +479,7 @@ input {
         padding: 0px;
     }
     
-    /* MEDIA QUERIS SOBRE MI */
+    /* MEDIA QUERIES SOBRE MI */
 
     .gridSobreMi {
         grid-template-columns: 75%;
@@ -461,7 +494,7 @@ input {
         width: 180px;
     }
 
-   /* MEDIA QUERIS CONTACTO - MI CUENTA */
+   /* MEDIA QUERIES CONTACTO - MI CUENTA */
 
    .gridContacto {
         grid-template-columns: auto;
@@ -492,7 +525,7 @@ input {
     .gridContacto {
         display: grid;
     }
-    /* MEDIA QUERIS INDEX */
+    /* MEDIA QUERIES INDEX */
 
     .gridMasVendidos {
         grid-template-columns: auto auto auto;
@@ -514,7 +547,7 @@ input {
         row-gap: 10px;
     }
     
-     /* MEDIA QUERIS SOBRE MI */
+     /* MEDIA QUERIES SOBRE MI */
 
      .gridSobreMi {
         grid-template-columns: 75%;
@@ -535,7 +568,7 @@ input {
         margin-bottom: 20px;
     }
 
-    /* MEDIA QUERIS PRODUCTOS */
+    /* MEDIA QUERIES PRODUCTOS */
 
     nav {
         display: block;
@@ -545,7 +578,7 @@ input {
         display: block;
     }
 
-    /* MEDIA QUERIS CONTACTO - MI CUENTA*/
+    /* MEDIA QUERIES CONTACTO - MI CUENTA*/
 
     .gridContacto {
         grid-template-columns: auto;

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* MAPA */
 * {
   margin: 0;
   padding: 0;
@@ -176,11 +177,12 @@ label {
 }
 
 section div a p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* MAP-GET*/
   background: #fc658f;
   color: #7B0124;
   text-decoration: none;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: inline-block;
   margin-top: 10px;
   margin-left: 5px;
@@ -189,9 +191,12 @@ section div a p {
   padding: 5px;
 }
 
-.centrar {
+.centrar, .botonSuscribirme, .btn btn-primary {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #fc658f;
   text-align: center;
+  color: #7B0124;
+  padding: 5px 5px 5px 5px;
 }
 
 footer {
@@ -265,6 +270,12 @@ input {
 }
 .card-body h5 {
   text-align: center;
+}
+
+section article a {
+  text-decoration: none;
+  margin: auto;
+  padding: 2px 2px 2px 2px;
 }
 
 /* Hasta acá Css Productos*/
@@ -390,7 +401,7 @@ input {
   grid-area: botonSuscribirme;
 }
 
-/* MEDIA QUERIS */
+/* MEDIA QUERIES */
 @media screen and (min-width: 320px) {
   .gridMasVendidos,
 .gridPacks,
@@ -399,7 +410,7 @@ input {
 .gridContacto {
     display: grid;
   }
-  /* MEDIA QUERIS INDEX */
+  /* MEDIA QUERIES INDEX */
   .gridMasVendidos {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -424,7 +435,7 @@ input {
     justify-content: center;
     padding: 0px;
   }
-  /* MEDIA QUERIS SOBRE MI */
+  /* MEDIA QUERIES SOBRE MI */
   .gridSobreMi {
     grid-template-columns: 75%;
     grid-template-rows: 8% auto auto auto 3%;
@@ -436,7 +447,7 @@ input {
   .fotoSobreMi {
     width: 180px;
   }
-  /* MEDIA QUERIS CONTACTO - MI CUENTA */
+  /* MEDIA QUERIES CONTACTO - MI CUENTA */
   .gridContacto {
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -461,7 +472,7 @@ input {
 .gridContacto {
     display: grid;
   }
-  /* MEDIA QUERIS INDEX */
+  /* MEDIA QUERIES INDEX */
   .gridMasVendidos {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -481,7 +492,7 @@ input {
          column-gap: 3em;
     row-gap: 10px;
   }
-  /* MEDIA QUERIS SOBRE MI */
+  /* MEDIA QUERIES SOBRE MI */
   .gridSobreMi {
     grid-template-columns: 75%;
     grid-template-rows: 8% auto auto auto 3%;
@@ -499,14 +510,14 @@ input {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /* MEDIA QUERIS PRODUCTOS */
+  /* MEDIA QUERIES PRODUCTOS */
   nav {
     display: block;
   }
   .fotoInicio {
     display: block;
   }
-  /* MEDIA QUERIS CONTACTO - MI CUENTA*/
+  /* MEDIA QUERIES CONTACTO - MI CUENTA*/
   .gridContacto {
     grid-template-columns: auto;
     grid-template-rows: auto;
