@@ -34,7 +34,7 @@ body {
 
 #gradiente {
     background: linear-gradient(to left, #e46a8e, #FBEAEF);
-}
+    }
 
 .logoYasemir {
     width: 80px;
@@ -76,7 +76,8 @@ ul {
 
     a{
         text-decoration: none;
-        color: darkred;  
+        color: darkred; 
+        border-radius: 10px; 
     }
 }
 
@@ -111,6 +112,16 @@ ul li:hover ul {
 li a:hover {
     background: #fff;
     color: $colorPrincipal;
+}
+
+.dropdown-item:hover {
+    background: #FDCAD9;
+    border-radius: 4px;
+}
+
+.dropdown-item:active {
+    background: #f8d2e2;
+    background-color: #7B0124;
 }
 
 article div a p {
@@ -174,11 +185,21 @@ div {
 }
 
 h3 {
+    width: 30%;
+    background: #FBEAEF;
     color: $colorPrincipal;
     font-size: 1em;
     display: inline-block;
     text-align: center;
     margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.carousel {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px 0 10px 0;
 }
 
 textarea {
@@ -219,6 +240,10 @@ section div a p {
     text-align: center;
     color: $colorPrincipal;
     padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    &:hover {
+        background-color: #FDCAD9;
+    }
 }
 
 footer {
@@ -299,7 +324,6 @@ input {
 }
 
 .card-body {
-    
     a {
     background-color:$colorPrincipal;
     border: 1px solid $colorSecundario;
@@ -325,6 +349,11 @@ section article a {
 
 /* Css de contacto */
 
+.formContacto {
+    width: 90%;
+    margin: 50px auto;
+}
+
 .col-1 {
     button {
     background-color:$colorPrincipal;
@@ -338,6 +367,9 @@ section article a {
     }
 }
 
+.form-label {
+    border: #7B0124
+}
 .btn btn-primary {
     @extend .centrar;
 }
@@ -489,6 +521,10 @@ section article a {
         display: flex;
         justify-content: center;
         padding: 0px;
+    }
+    
+    .carousel {
+        width: 95%;
     }
     
     /* MEDIA QUERIES SOBRE MI */
