@@ -170,17 +170,11 @@ h3 {
   background: #FBEAEF;
   color: #7B0124;
   font-size: 1em;
-  display: inline-block;
+  display: flex;
   text-align: center;
-  margin: 1em;
+  margin: 1em auto;
   padding: 1em;
   border-radius: 10px;
-}
-
-.carousel {
-  width: 70%;
-  margin: 0 auto;
-  padding: 5px 0 10px 0;
 }
 
 textarea {
@@ -228,21 +222,27 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
 }
-footer img {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  margin: 1px 4px 5px 4px;
-}
 footer p {
   background-color: #fc658f;
   color: darkred;
+  margin-top: 1em;
 }
 
 .fotosRedes {
   display: inline-block;
-  margin-top: 7em;
+  margin-top: 5em;
+}
+
+h5 {
+  color: #7B0124;
+}
+
+.card-group {
+  margin: 5px 1em 2em 1em;
+}
+
+path {
+  color: #7B0124;
 }
 
 /* Css Sobre mi*/
@@ -335,6 +335,10 @@ section article a {
 
 .form-label {
   border: #7B0124;
+}
+
+input {
+  margin-bottom: 5px;
 }
 
 /* Hasta acá Css de contacto*/
@@ -482,7 +486,7 @@ section article a {
     padding: 0px;
   }
   .carousel {
-    width: 95%;
+    width: 75%;
   }
   /* MEDIA QUERIES SOBRE MI */
   .gridSobreMi {
