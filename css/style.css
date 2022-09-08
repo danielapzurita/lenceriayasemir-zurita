@@ -166,12 +166,13 @@ div {
 }
 
 h3 {
-  width: 30%;
+  width: 35%;
   background: #FBEAEF;
   color: #7B0124;
   font-size: 1em;
   display: flex;
   text-align: center;
+  justify-content: center;
   margin: 1em auto;
   padding: 1em;
   border-radius: 10px;
@@ -250,7 +251,8 @@ h1 {
   color: #7B0124;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  margin: 10px;
+  margin-top: 25px;
+  margin-bottom: 1em;
 }
 
 .foto {
@@ -316,10 +318,12 @@ section article a {
 }
 
 /* Hasta acá Css Productos*/
-/* Css de contacto */
+/* Css de Contacto*/
 .formContacto {
+  background: url(../media/parainicio.jpeg);
+  background-size: cover;
   width: 90%;
-  margin: 50px auto;
+  margin: 2em auto;
 }
 
 .col-1 button {
@@ -341,48 +345,41 @@ input {
   margin-bottom: 5px;
 }
 
-/* Hasta acá Css de contacto*/
-/* GRIDS */
-.gridMasVendidos {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-  grid-template-areas: "tituloP tituloP tituloP" "less vedetina conjuntos";
-  justify-content: space-evenly;
-  justify-items: center;
-  text-align: center;
+/* Hasta acá Css de Contacto*/
+/* Css de Mi Cuenta*/
+.gridContacto {
+  background: url(../media/parainicio.jpeg);
+  background-size: cover;
+  width: 90%;
+  margin: 2em auto;
 }
 
-.tituloVendidos {
-  width: 20em;
-  grid-area: tituloP;
-  border-radius: 20px;
-  background-color: #FBEAEF;
-  margin-bottom: 1em;
-  padding: 0.5em;
+.formulario input {
+  border: 2px solid #7B0124;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.mapa {
+  display: flex;
+  margin-bottom: 2em;
+  justify-content: center;
+}
+
+p a {
+  background-color: #ccc;
   color: #7B0124;
+  text-decoration: none;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+p a:hover {
+  color: #fc658f;
 }
 
-.less {
-  grid-area: less;
-}
-
-.vedetina {
-  grid-area: vedetina;
-}
-
-.conjuntos {
-  grid-area: conjuntos;
-}
-
-.foto {
-  width: auto;
-  background-color: #FBEAEF;
-  margin-bottom: 1em;
-  padding: 10px 30px 10px 10px;
-  text-align: center;
-}
-
+/* Hasta acá Css de Mi Cuenta*/
+/* GRIDS */
 .gridPacks {
   display: grid;
   grid-template-columns: auto auto;
@@ -453,22 +450,13 @@ input {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 320px) {
-  .gridMasVendidos,
-.gridPacks,
+  .gridPacks,
 .gridSobreMi,
 .gridProductos,
 .gridContacto {
     display: grid;
   }
   /* MEDIA QUERIES INDEX */
-  .gridMasVendidos {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "tituloP" "less";
-    justify-content: space-evenly;
-    justify-items: center;
-    text-align: center;
-  }
   .gridPacks {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -485,9 +473,6 @@ input {
     justify-content: center;
     padding: 0px;
   }
-  .carousel {
-    width: 75%;
-  }
   /* MEDIA QUERIES SOBRE MI */
   .gridSobreMi {
     grid-template-columns: 75%;
@@ -498,7 +483,7 @@ input {
     align-content: center;
   }
   .fotoSobreMi {
-    width: 180px;
+    width: 250px;
   }
   /* MEDIA QUERIES CONTACTO - MI CUENTA */
   .gridContacto {
@@ -518,22 +503,12 @@ input {
   }
 }
 @media screen and (min-width: 1200px) {
-  .gridMasVendidos,
-.gridPacks,
+  .gridPacks,
 .gridSobreMi,
-.gridProductos,
 .gridContacto {
     display: grid;
   }
   /* MEDIA QUERIES INDEX */
-  .gridMasVendidos {
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "tituloP tituloP tituloP" "less vedetina conjuntos";
-    justify-content: space-evenly;
-    justify-items: center;
-    text-align: center;
-  }
   .gridPacks {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
